@@ -5,5 +5,5 @@ public class Order {
     private ArrayList<Product> productList;
     private User user;
     private ShippingType shippingType;
-    
+
 }
