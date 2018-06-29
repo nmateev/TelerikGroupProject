@@ -1,4 +1,6 @@
-package product;
+package onlineshop.product;
+
+import onlineshop.users.User;
 
 public interface Returnable {
     int daysForPossibleReturn = 14;

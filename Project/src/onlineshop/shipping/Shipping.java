@@ -1,4 +1,4 @@
-package shipping;
+package onlineshop.shipping;
 
 public abstract class Shipping {
     private ShippingType type;

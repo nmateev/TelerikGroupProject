@@ -1,11 +1,10 @@
-package productdatabase;
+package onlineshop.productdatabase;
 
-import product.Category;
-import product.Customisable;
-import product.Product;
-import product.Returnable;
-import productdatabase.LoadableDatabase;
-import productdatabase.SearchableDatabase;
+
+import onlineshop.product.Category;
+import onlineshop.product.Customisable;
+import onlineshop.product.Product;
+import onlineshop.product.Returnable;
 
 import java.util.ArrayList;
 

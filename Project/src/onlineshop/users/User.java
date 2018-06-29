@@ -1,7 +1,12 @@
-package onlineshop.orders;
+package onlineshop.users;
 
-public class User {
+
+public abstract class User extends Cart {
     private String userName;
     private String phone;
     private String address;
+
+
+
+    public abstract void giveOrder();
 }

@@ -1,5 +1,5 @@
 package onlineshop.users;
 
-public class VipUserTypes {
-    
+public enum VipUserType {
+    SILVER,GOLD,PLATINUM
 }

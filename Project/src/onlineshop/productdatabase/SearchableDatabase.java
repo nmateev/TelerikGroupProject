@@ -1,7 +1,8 @@
-package productdatabase;
+package onlineshop.productdatabase;
 
-import product.Category;
-import product.Product;
+
+import onlineshop.product.Category;
+import onlineshop.product.Product;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,6 @@
-package product;
+package onlineshop.product;
+
+import onlineshop.Supplier;
 
 public abstract class Product {
     int id;
