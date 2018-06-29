@@ -1,4 +1,6 @@
-package onlineshop.orders;
+package onlineshop.users;
+
+import onlineshop.product.Product;
 
 public class Cart {
 

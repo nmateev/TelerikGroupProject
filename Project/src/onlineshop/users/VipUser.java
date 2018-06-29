@@ -1,4 +1,10 @@
-package onlineshop.orders;
+package onlineshop.users;
 
-public class UserType {
+public class VipUser extends User {
+    private VipUserType type;
+
+    @Override
+    public void giveOrder() {
+
+    }
 }

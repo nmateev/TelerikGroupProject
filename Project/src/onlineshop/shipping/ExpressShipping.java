@@ -1,4 +1,4 @@
-package shipping;
+package onlineshop.shipping;
 
 public class ExpressShipping extends Shipping {
     final static String DELIVERY_TIME="2-3 Days";
