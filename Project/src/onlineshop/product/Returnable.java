@@ -1,4 +1,6 @@
-package product;
+package onlineshop.product;
+
+import onlineshop.users.User;
 
 public interface Returnable {
     int daysForPossibleReturn = 14;
@@ -6,5 +8,5 @@ public interface Returnable {
     void giveMoneyBack(User user);
 
     void increaseStockAfterReturn(Product product, int quantity);
-
+    void showProduct();
 }

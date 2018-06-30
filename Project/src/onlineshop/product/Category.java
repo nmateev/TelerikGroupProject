@@ -1,5 +1,5 @@
-package product;
+package onlineshop.product;
 
 public enum Category {
-    SUPPLIENCES, CLOTHES, ACCESSORIES, SHOES
+    FOODS, DRINKS, CLOTHES, SHOES, ACCESSORIES, ELECTRONICS,;
 }

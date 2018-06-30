@@ -1,7 +1,8 @@
-package productdatabase;
+package onlineshop.productdatabase;
 
-import product.Category;
-import product.Product;
+
+import onlineshop.product.Category;
+import onlineshop.product.Product;
 
 import java.util.ArrayList;
 
@@ -11,6 +12,10 @@ public interface SearchableDatabase {
     ArrayList<Product> searchByName(String name);
 
     ArrayList<Product> searchByPrice(double price);
+
+    ArrayList<Product> searchBelowGivenPrice(double price);
+
+    ArrayList<Product> searchAboveGivenPrice(double price);
 
     ArrayList<Product> searchByCategory(Category category);
 
