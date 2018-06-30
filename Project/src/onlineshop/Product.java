@@ -1,8 +1,22 @@
+<<<<<<< HEAD:Project/src/onlineshop/Product.java
+package onlineshop;
+=======
 package onlineshop.product;
+>>>>>>> db72fcb445bd2aca4639e158dfb83f18ba2e8b82:Project/src/onlineshop/product/Product.java
 
 import onlineshop.Supplier;
 
 public abstract class Product {
+<<<<<<< HEAD:Project/src/onlineshop/Product.java
+    int id;
+    String name;
+    String brand;
+    String description;
+    product.Category categoryType;
+    int stock;
+    double price;
+    Supplier supplier;
+=======
     static int idGenerator = 1;
     private int id;
     private String name;
@@ -103,6 +117,7 @@ public abstract class Product {
         this.price = price;
     }
 
+>>>>>>> db72fcb445bd2aca4639e158dfb83f18ba2e8b82:Project/src/onlineshop/product/Product.java
 
     private void setSupplier(Supplier supplier) {
         this.supplier = supplier;
