@@ -1,4 +1,4 @@
-package shipping;
+package onlineshop.shipping;
 
 public class StandartShipping extends Shipping {
     final static String DELIVERY_TIME="0-1 Week";
