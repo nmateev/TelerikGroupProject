@@ -1,4 +1,5 @@
-package shipping;
+package onlineshop.shipping;
+
 
 public class FreeShipping extends Shipping {
     final static String DELIVERY_TIME="1-2 Weeks";
