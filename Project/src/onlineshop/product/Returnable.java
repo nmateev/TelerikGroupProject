@@ -8,5 +8,5 @@ public interface Returnable {
     void giveMoneyBack(User user);
 
     void increaseStockAfterReturn(Product product, int quantity);
-
+    void showProduct();
 }

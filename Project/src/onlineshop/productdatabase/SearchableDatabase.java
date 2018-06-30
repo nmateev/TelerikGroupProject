@@ -13,6 +13,10 @@ public interface SearchableDatabase {
 
     ArrayList<Product> searchByPrice(double price);
 
+    ArrayList<Product> searchBelowGivenPrice(double price);
+
+    ArrayList<Product> searchAboveGivenPrice(double price);
+
     ArrayList<Product> searchByCategory(Category category);
 
     ArrayList<Product> searchByDescription(String description);

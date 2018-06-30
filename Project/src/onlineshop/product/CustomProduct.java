@@ -11,8 +11,9 @@ public class CustomProduct extends Product implements Customisable {
     String customParts;
     double totalPrice;
 
-    CustomProduct(String name, String brand, String description, Category categoryType, int stock, double price, Supplier supplier) {
+    public CustomProduct(String name, String brand, String description, Category categoryType, int stock, double price, Supplier supplier, String descriptionOfCustomisation) {
         super(name, brand, description, categoryType, stock, price, supplier);
+        setDescriptionOfCustomisation(descriptionOfCustomisation);
     }
 
     @Override
