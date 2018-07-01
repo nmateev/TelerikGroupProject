@@ -33,6 +33,7 @@ public class ProductDatabase implements LoadableDatabase, SearchableDatabase {
         File file = new File("Project\\files\\products-data.txt");
         try (BufferedReader in = new BufferedReader(new FileReader(file))) {
             String line;
+            int productId = 1;
             while (!(Objects.equals(line = in.readLine(), null))) {
                 String[] productData = line.split(", ");
                 String name = productData[0];
@@ -60,24 +61,25 @@ public class ProductDatabase implements LoadableDatabase, SearchableDatabase {
                 Supplier supplier = new Supplier(nameOfSupplier);
                 String customisationOption = productData[7];
                 boolean isCustomisable = customisationOption.equals("yes");
+
                 if (isCustomisable) {
                     String customisationDescription = productData[8];
-                    CustomProduct customProduct = new CustomProduct(name, brand, productDescription, category, stock, price, supplier, customisationDescription);
+                    CustomProduct customProduct = new CustomProduct(productId, name, brand, productDescription, category, stock, price, supplier, customisationDescription);
                     if (!Objects.equals(customProduct, null)) {
                         this.customisableProducts.add(customProduct);
                     }
-                    StandardProduct standardProduct = new StandardProduct(name, brand, productDescription, category, stock, price, supplier);
+                    StandardProduct standardProduct = new StandardProduct(productId, name, brand, productDescription, category, stock, price, supplier);
                     if (!Objects.equals(standardProduct, null)) {
                         this.products.add(standardProduct);
                     }
                 } else {
-                    StandardProduct standardProduct = new StandardProduct(name, brand, productDescription, category, stock, price, supplier);
+                    StandardProduct standardProduct = new StandardProduct(productId, name, brand, productDescription, category, stock, price, supplier);
                     if (!Objects.equals(standardProduct, null)) {
                         this.products.add(standardProduct);
                         this.returnableProducts.add(standardProduct);
                     }
                 }
-
+                productId++;
             }
         } catch (IOException e) {
             System.out.println(ERROR_MESSAGE_FOR_DATABASE_LOADING_PROBLEMS);
@@ -88,10 +90,10 @@ public class ProductDatabase implements LoadableDatabase, SearchableDatabase {
 
     @Override
     public ArrayList<Product> searchByBrand(String brand) {
-        String finalBrand = brand.toLowerCase();
+
         List<Product> productsMatchingGivenBrand = getProducts()
                 .stream()
-                .filter(product -> product.getBrand().toLowerCase().equalsIgnoreCase(finalBrand))
+                .filter(product -> product.getBrand().toLowerCase().equals(brand.toLowerCase()))
                 .collect(Collectors.toList());
         return (ArrayList<Product>) productsMatchingGivenBrand;
     }

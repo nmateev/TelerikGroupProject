@@ -3,7 +3,7 @@ package onlineshop.product;
 import onlineshop.Supplier;
 
 public abstract class Product {
-    static int idGenerator = 1;
+
     private int id;
     private String name;
     private String brand;
@@ -14,8 +14,8 @@ public abstract class Product {
     private Supplier supplier;
 
 
-    Product(String name, String brand, String description, Category categoryType, int stock, double price, Supplier supplier) {
-        setId(idGenerator);
+    Product(int id,String name, String brand, String description, Category categoryType, int stock, double price, Supplier supplier) {
+        setId(id);
         setName(name);
         setBrand(brand);
         setDescription(description);
@@ -23,7 +23,6 @@ public abstract class Product {
         setStock(stock);
         setPrice(price);
         setSupplier(supplier);
-        idGenerator++;
     }
 
     public int getId() {
@@ -67,6 +66,15 @@ public abstract class Product {
                 .append(", Stock: ").append(this.getStock());
         System.out.println(productInfo);
 
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder currentProduct = new StringBuilder();
+        currentProduct
+                .append(this.getName()).append(", Brand: ").append(this.getBrand());
+
+        return currentProduct.toString();
     }
 
     private void setId(int id) {

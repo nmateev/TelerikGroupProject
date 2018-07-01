@@ -3,31 +3,24 @@ package onlineshop.product;
 import onlineshop.Supplier;
 
 public class CustomProduct extends Product implements Customisable {
-    final static int COST_OF_CUSTOMISATION = 5;
-    String descriptionOfCustomisation;
+    private final static int COST_OF_CUSTOMISATION = 5;
 
+    private String descriptionOfCustomisation;
+    private String customisation;
+    private double totalPrice;
 
-    String customLabel;
-    String customParts;
-    double totalPrice;
-
-    public CustomProduct(String name, String brand, String description, Category categoryType, int stock, double price, Supplier supplier, String descriptionOfCustomisation) {
-        super(name, brand, description, categoryType, stock, price, supplier);
+    public CustomProduct(int id, String name, String brand, String description, Category categoryType, int stock, double price, Supplier supplier, String descriptionOfCustomisation) {
+        super(id, name, brand, description, categoryType, stock, price, supplier);
         setDescriptionOfCustomisation(descriptionOfCustomisation);
     }
 
     @Override
-    public CustomProduct addLabel(String label) {
-        // CustomProduct customProduct = new CustomProduct();
-        //  return customProduct;
-        return null;
-    }
-
-    @Override
-    public CustomProduct addParts(String parts) {
-        // CustomProduct customProduct = new CustomProduct();
-        // return customProduct;
-        return null;
+    public CustomProduct addCustomisation(String customisation) {
+        CustomProduct productAfterCustomisation = this;
+        productAfterCustomisation.setCustomisation(customisation);
+        double currentPrice = productAfterCustomisation.getPrice();
+        productAfterCustomisation.setTotalPrice(currentPrice + COST_OF_CUSTOMISATION);
+        return productAfterCustomisation;
     }
 
     @Override
@@ -39,16 +32,17 @@ public class CustomProduct extends Product implements Customisable {
 
     }
 
+    @Override
+    public String toString() {
+        return super.toString() + " Customised with: " + this.getCustomisation();
+    }
+
     public String getDescriptionOfCustomisation() {
         return descriptionOfCustomisation;
     }
 
-    public String getCustomLabel() {
-        return customLabel;
-    }
-
-    public String getCustomParts() {
-        return customParts;
+    public String getCustomisation() {
+        return customisation;
     }
 
     public double getTotalPrice() {
@@ -59,12 +53,8 @@ public class CustomProduct extends Product implements Customisable {
         this.descriptionOfCustomisation = descriptionOfCustomisation;
     }
 
-    private void setCustomLabel(String customLabel) {
-        this.customLabel = customLabel;
-    }
-
-    private void setCustomParts(String customParts) {
-        this.customParts = customParts;
+    private void setCustomisation(String customisation) {
+        this.customisation = customisation;
     }
 
     private void setTotalPrice(double totalPrice) {
