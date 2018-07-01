@@ -62,9 +62,9 @@ public abstract class Product {
         StringBuilder productInfo = new StringBuilder();
         productInfo
                 .append(this.getName()).append(", Brand: ").append(this.getBrand())
-                .append(", Product description: ").append(this.getDescription())
+                .append(", Description: ").append(this.getDescription())
                 .append(", Price: ").append(this.getPrice())
-                .append(", Stock availability: ").append(this.getStock());
+                .append(", Stock: ").append(this.getStock());
         System.out.println(productInfo);
 
     }

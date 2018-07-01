@@ -1,9 +1,6 @@
 package onlineshop.productdatabase;
 
-
-import onlineshop.product.Category;
 import onlineshop.product.Product;
-
 import java.util.ArrayList;
 
 public interface SearchableDatabase {
@@ -11,13 +8,13 @@ public interface SearchableDatabase {
 
     ArrayList<Product> searchByName(String name);
 
-    ArrayList<Product> searchByPrice(double price);
+    ArrayList<Product> searchByPrice(String price);
 
-    ArrayList<Product> searchBelowGivenPrice(double price);
+    ArrayList<Product> searchBelowGivenPrice(String price);
 
-    ArrayList<Product> searchAboveGivenPrice(double price);
+    ArrayList<Product> searchAboveGivenPrice(String price);
 
-    ArrayList<Product> searchByCategory(Category category);
+    ArrayList<Product> searchByCategory(String category);
 
     ArrayList<Product> searchByDescription(String description);
 }
