@@ -11,7 +11,7 @@ public class ProductDatabase implements LoadableDatabase, SearchableDatabase {
             "Please restart and try again";
     private static final String ERROR_MESSAGE_FOR_SEARCHING_BY_PRICE = "You should enter a numeric value. Try again";
     private static final String ERROR_MESSAGE_FOR_SEARCHING_BY_CATEGORY = "There is no such category. Try again.";
-    private ArrayList<Product> products;
+    ArrayList<Product> products;
     private ArrayList<Returnable> returnableProducts;
     private ArrayList<Customisable> customisableProducts;
     private ArrayList<Category> categories;

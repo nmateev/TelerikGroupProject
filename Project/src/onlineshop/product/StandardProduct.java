@@ -1,5 +1,6 @@
 package onlineshop.product;
 
+import onlineshop.OnlineStore;
 import onlineshop.Supplier;
 
 import java.util.ArrayList;
@@ -20,21 +21,16 @@ public class StandardProduct extends Product implements Returnable {
             int id = returnedProduct.getId();
             int currentStockOfProduct;
             ArrayList<Product> allProducts = database.products;
-            for (Product allProduct : allProducts) {
-                if (allProduct.getId() == id) {
-                    currentStockOfProduct = allProduct.getStock();
-                    allProduct.setStock(currentStockOfProduct + quantityReturned);
+            for (Product product : allProducts) {
+                if (product.getId() == id) {
+                    currentStockOfProduct = product.getStock();
+                    product.setStock(currentStockOfProduct + quantityReturned);
                     break;
                 }
             }
         } catch (NullPointerException npe) {
             System.out.println(ERROR_MESSAGE_FOR_RETURNING_PRODUCT);
         }
-    }
-
-    @Override
-    public void showProduct() {
-
     }
 }
 
