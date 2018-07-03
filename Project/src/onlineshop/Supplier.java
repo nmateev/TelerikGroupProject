@@ -1,5 +1,6 @@
 package onlineshop;
-
+/*This Supplier class is for creating a supplier from whom we can restock the store if it is in low stock or no
+ stock in the store*/
 public class Supplier {
     private String nameOfSupplier;
 

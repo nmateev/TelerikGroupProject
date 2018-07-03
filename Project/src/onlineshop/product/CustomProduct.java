@@ -21,7 +21,9 @@ public class CustomProduct extends Product implements Customisable {
         productAfterCustomisation.setCustomisation(customisation);
         return productAfterCustomisation;
     }
-
+    /* the overwritten string method presents information for the store and its purpose is to show only the name, brand
+        and information for the custom store's customisation description and to be called when the order
+        of the user is completed to show the user the items that he ordered */
     @Override
     public void showProduct() {
         super.showProduct();

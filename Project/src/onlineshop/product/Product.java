@@ -55,6 +55,9 @@ public abstract class Product {
         return supplier;
     }
 
+
+    /*this method serves as presenter of the store and is used to show the whole product information - name, brand,
+    description, price, and stock*/
     public void showProduct() {
         StringBuilder productInfo = new StringBuilder();
         productInfo
@@ -66,6 +69,8 @@ public abstract class Product {
 
     }
 
+    /* the overridden string method presents information for the product and its purpose is to show only the name and brand
+   of the product and to be called when the order of the user is completed to show the user ordered items */
     @Override
     public String toString() {
         StringBuilder currentProduct = new StringBuilder();

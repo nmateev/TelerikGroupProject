@@ -1,8 +1,8 @@
 package onlineshop.product;
 
-import onlineshop.product.Product;
 import java.util.ArrayList;
 
+//Interface which marks the functionality which the database that implements the SearchableDatabase interface will support
 public interface SearchableDatabase {
     ArrayList<Product> searchByBrand(String brand);
 
