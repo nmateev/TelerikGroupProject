@@ -1,6 +1,6 @@
 package onlineshop.product;
 
-import onlineshop.OnlineStore;
+
 import onlineshop.Supplier;
 
 import java.util.ArrayList;
