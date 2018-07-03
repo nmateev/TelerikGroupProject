@@ -2,6 +2,7 @@ package onlineshop.product;
 
 import onlineshop.Supplier;
 
+
 public abstract class Product {
 
     private int id;
@@ -19,7 +20,7 @@ public abstract class Product {
         setName(name);
         setBrand(brand);
         setDescription(description);
-        setCategoryType(categoryType);
+        setCategory(categoryType);
         setStock(stock);
         setPrice(price);
         setSupplier(supplier);
@@ -45,7 +46,7 @@ public abstract class Product {
     public int getStock() {
         return stock;
     }
-
+   
     public double getPrice() {
         return price;
     }
@@ -86,31 +87,25 @@ public abstract class Product {
         this.id = id;
     }
 
-
     private void setName(String name) {
         this.name = name;
     }
-
 
     private void setBrand(String brand) {
         this.brand = brand;
     }
 
-
     private void setDescription(String description) {
         this.description = description;
     }
 
-
-    private void setCategoryType(Category categoryType) {
-        this.categoryType = categoryType;
+    private void setCategory(Category category) {
+        this.categoryType = category;
     }
-
 
     private void setPrice(double price) {
         this.price = price;
     }
-
 
     private void setSupplier(Supplier supplier) {
         this.supplier = supplier;

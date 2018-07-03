@@ -1,8 +1,9 @@
-import onlineshop.OnlineStore;
+import onlineshop.product.ProductDatabase;
 
 public class Application {
     public static void main(String[] args) {
-        OnlineStore store = new OnlineStore();
-
+        ProductDatabase database = new ProductDatabase();
+        database.loadProductDatabase();
+        database.getProducts().stream().forEach(product -> product.showProduct());
     }
 }

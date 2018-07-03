@@ -1,14 +1,26 @@
 package onlineshop.order;
-import onlineshop.product.Product;
-import onlineshop.shipping.ShippingType;
+
+import onlineshop.shipping.Shipping;
 import onlineshop.users.User;
 
-import java.util.ArrayList;
-
 public class Order {
-    private int totalCost;
-    private ArrayList<Product> productList;
     private User user;
-    private ShippingType shippingType;
+    private double totalCost;
 
+    public Order(User user, Shipping type, double totalCost, int itemCount) {
+        setUser(user);
+        this.totalCost = totalCost;
+    }
+
+    public double getTotalCost() {
+        return totalCost;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    private void setUser(User user) {
+        this.user = user;
+    }
 }

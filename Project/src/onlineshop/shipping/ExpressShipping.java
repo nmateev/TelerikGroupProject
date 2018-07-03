@@ -16,7 +16,7 @@ public class ExpressShipping extends Shipping {
     }
 
     @Override
-    public void setPrice(double price) {
+    public void setPrice() {
 
     }
 }

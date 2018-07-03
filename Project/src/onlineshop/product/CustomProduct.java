@@ -8,7 +8,6 @@ public class CustomProduct extends Product implements Customisable {
 
     private String descriptionOfCustomisation;
     private String customisation;
-    private double totalPrice;
 
     public CustomProduct(int id, String name, String brand, String description, Category categoryType, int stock, double price, Supplier supplier, String descriptionOfCustomisation) {
         super(id, name, brand, description, categoryType, stock, price, supplier);
@@ -20,8 +19,6 @@ public class CustomProduct extends Product implements Customisable {
 
         CustomProduct productAfterCustomisation = this;
         productAfterCustomisation.setCustomisation(customisation);
-        double currentPrice = productAfterCustomisation.getPrice();
-        productAfterCustomisation.setTotalPrice(currentPrice + COST_OF_CUSTOMISATION);
         return productAfterCustomisation;
     }
 
@@ -47,10 +44,6 @@ public class CustomProduct extends Product implements Customisable {
         return customisation;
     }
 
-    public double getTotalPrice() {
-        return totalPrice;
-    }
-
     public int getCostOfCustomisation() {
         return COST_OF_CUSTOMISATION;
     }
@@ -63,7 +56,4 @@ public class CustomProduct extends Product implements Customisable {
         this.customisation = customisation;
     }
 
-    private void setTotalPrice(double totalPrice) {
-        this.totalPrice = totalPrice;
-    }
 }

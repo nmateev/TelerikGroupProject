@@ -3,20 +3,20 @@ package onlineshop.shipping;
 public abstract class Shipping {
     private ShippingType type;
 
-    // shipping price
+    // onlineshop.shipping price
     protected double price;
 
     //delivery time in hours
     private String deliveryTime;
 
-    //shipping address
+    //onlineshop.shipping address
     private String shippingAddress;
 
     public void setType(ShippingType type) {
         this.type = type;
     }
 
-    public abstract void setPrice(double price);
+    public abstract void setPrice();
 
     public void setDeliveryTime(String deliveryTime){
 

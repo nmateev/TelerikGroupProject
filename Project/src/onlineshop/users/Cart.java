@@ -2,20 +2,33 @@ package onlineshop.users;
 
 import onlineshop.product.Product;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Cart {
+    private Map<Product,Integer> productsAndQuantities;
+    private int itemCount;
 
-    public void add(Product product) {
-       // userProducts.add(product);
+    public Cart() {
+        productsAndQuantities = new HashMap<>();
     }
 
-    public void delete(String productName) {
-      //  if (userProducts.contains(productName)) {
-     //       userProducts.remove(productName);
-     //   }
+    public Map<Product, Integer> getProductsAndQuantities() {
+        return new HashMap<>(productsAndQuantities);
     }
 
-    public int count(){
-      //  return userProducts.size();
-        return 0;
+    public void addToCart(Product product, int quantity) {
+        productsAndQuantities.put(product,quantity);
+    }
+
+    public void removeFromCart(Product product) {
+        productsAndQuantities.remove(product);
+    }
+
+    public int getItemCount() {
+        for (Product product: productsAndQuantities.keySet()) {
+            itemCount += productsAndQuantities.get(product);
+        }
+        return itemCount;
     }
 }
