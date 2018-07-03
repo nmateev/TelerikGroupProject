@@ -14,7 +14,7 @@ public abstract class Product {
     private Supplier supplier;
 
 
-    Product(int id,String name, String brand, String description, Category categoryType, int stock, double price, Supplier supplier) {
+    Product(int id, String name, String brand, String description, Category categoryType, int stock, double price, Supplier supplier) {
         setId(id);
         setName(name);
         setBrand(brand);
@@ -25,9 +25,6 @@ public abstract class Product {
         setSupplier(supplier);
     }
 
-    public int getId() {
-        return id;
-    }
 
     public String getName() {
         return name;
@@ -77,6 +74,14 @@ public abstract class Product {
         return currentProduct.toString();
     }
 
+    void setStock(int stock) {
+        this.stock = stock;
+    }
+
+    int getId() {
+        return id;
+    }
+
     private void setId(int id) {
         this.id = id;
     }
@@ -99,11 +104,6 @@ public abstract class Product {
 
     private void setCategoryType(Category categoryType) {
         this.categoryType = categoryType;
-    }
-
-
-    private void setStock(int stock) {
-        this.stock = stock;
     }
 
 

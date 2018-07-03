@@ -2,7 +2,7 @@ package onlineshop.product;
 
 public interface Returnable {
 
-    void increaseStockAfterReturn(Product product, int quantity);
+    void increaseStockAfterReturn(int quantity, ProductDatabase database);
 
     void showProduct();
 }

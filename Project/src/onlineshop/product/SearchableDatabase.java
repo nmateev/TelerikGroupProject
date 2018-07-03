@@ -1,4 +1,4 @@
-package onlineshop.productdatabase;
+package onlineshop.product;
 
 import onlineshop.product.Product;
 import java.util.ArrayList;

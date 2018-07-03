@@ -1,4 +1,4 @@
-package onlineshop.productdatabase;
+package onlineshop.product;
 
 public interface LoadableDatabase {
 

@@ -3,7 +3,8 @@ package onlineshop.product;
 import onlineshop.Supplier;
 
 public class CustomProduct extends Product implements Customisable {
-    private final static int COST_OF_CUSTOMISATION = 5;
+
+    public final int COST_OF_CUSTOMISATION = 5;
 
     private String descriptionOfCustomisation;
     private String customisation;
@@ -16,6 +17,7 @@ public class CustomProduct extends Product implements Customisable {
 
     @Override
     public CustomProduct addCustomisation(String customisation) {
+
         CustomProduct productAfterCustomisation = this;
         productAfterCustomisation.setCustomisation(customisation);
         double currentPrice = productAfterCustomisation.getPrice();
@@ -47,6 +49,10 @@ public class CustomProduct extends Product implements Customisable {
 
     public double getTotalPrice() {
         return totalPrice;
+    }
+
+    public int getCostOfCustomisation() {
+        return COST_OF_CUSTOMISATION;
     }
 
     private void setDescriptionOfCustomisation(String descriptionOfCustomisation) {

@@ -1,7 +1,6 @@
-package onlineshop.productdatabase;
+package onlineshop.product;
 
 import onlineshop.Supplier;
-import onlineshop.product.*;
 
 import java.io.*;
 import java.util.*;
@@ -12,7 +11,7 @@ public class ProductDatabase implements LoadableDatabase, SearchableDatabase {
             "Please restart and try again";
     private static final String ERROR_MESSAGE_FOR_SEARCHING_BY_PRICE = "You should enter a numeric value. Try again";
     private static final String ERROR_MESSAGE_FOR_SEARCHING_BY_CATEGORY = "There is no such category. Try again.";
-    private ArrayList<Product> products;
+    ArrayList<Product> products;
     private ArrayList<Returnable> returnableProducts;
     private ArrayList<Customisable> customisableProducts;
     private ArrayList<Category> categories;
@@ -42,17 +41,23 @@ public class ProductDatabase implements LoadableDatabase, SearchableDatabase {
                 Category category = null;
                 String categoryType = productData[3];
                 switch (categoryType) {
-                    case "FOODS": category = Category.FOODS;
+                    case "FOODS":
+                        category = Category.FOODS;
                         break;
-                    case "DRINKS": category = Category.DRINKS;
+                    case "DRINKS":
+                        category = Category.DRINKS;
                         break;
-                    case "CLOTHES": category = Category.CLOTHES;
+                    case "CLOTHES":
+                        category = Category.CLOTHES;
                         break;
-                    case "SHOES": category = Category.SHOES;
+                    case "SHOES":
+                        category = Category.SHOES;
                         break;
-                    case "ACCESSORIES": category = Category.ACCESSORIES;
+                    case "ACCESSORIES":
+                        category = Category.ACCESSORIES;
                         break;
-                    case "ELECTRONICS": category = Category.ELECTRONICS;
+                    case "ELECTRONICS":
+                        category = Category.ELECTRONICS;
                         break;
                 }
                 int stock = Integer.parseInt(productData[4]);
