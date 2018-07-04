@@ -37,7 +37,7 @@ public class StandardProduct extends Product implements Returnable {
             product with the returned quantity*/
             if (!isProductInTheSystem) {
                 returnedProduct.setStock(quantityReturned);
-                database.products.add(returnedProduct);
+               database.products.add(returnedProduct);
                 database.returnableProducts.add((StandardProduct) returnedProduct);
             }
         } catch (NullPointerException npe) {

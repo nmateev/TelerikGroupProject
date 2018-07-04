@@ -3,6 +3,10 @@ package onlineshop.product;
 import onlineshop.Supplier;
 
 import java.io.*;
+import java.nio.file.FileSystem;
+import java.nio.file.FileSystems;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -28,8 +32,10 @@ public class ProductDatabase implements LoadableDatabase, SearchableDatabase {
      whether or not the product is customisable, description for customisation */
     @Override
     public void loadProductDatabase() {
-
-        File file = new File("Project\\files\\products-data.txt");
+        // File file = Paths.get("Project\\files\\products-data.txt").toFile();
+        String separator = System.getProperty("file.separator");
+        File file = new File("Project" + separator + "files" + separator + "products-data.txt");
+        System.out.println(file.getAbsolutePath());
         try (BufferedReader in = new BufferedReader(new FileReader(file))) {
             String line;
 
@@ -270,6 +276,7 @@ public class ProductDatabase implements LoadableDatabase, SearchableDatabase {
         System.out.println(categoriesBuilder);
 
     }
+
     //adds standard product to the database but by doing so with a method we validate if the created product does not equal null
     public void addStandardProductToDatabase(StandardProduct product) {
         if (!Objects.equals(product, null)) {
