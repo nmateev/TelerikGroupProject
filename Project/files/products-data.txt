@@ -1,0 +1,20 @@
+Red label, Johnnie Walker, Fine scottish whiskey bursting with vibrant smoky flavours.700ml bottle, DRINKS, 350, 23.1, FunStore, no,  ,
+Blue label, Johnnie Walker, An exquisite combination of Scotland's rarest and most exceptional whiskies. 700ml bottle, DRINKS, 50, 320.5, FunStore, no,  ,
+Grant's Family Reserve, Grant's, There are notes of malted barley and toasted cereals with the requisite sweetness. 700ml bottle, DRINKS, 97, 40.00, FunStore, no,  ,
+Devin spring water, Devin, Spring water directly bottled from the spring offered in fully recycable bottle. 500ml bottle, DRINKS, 1000, 1.20, Devin OOD, no,  ,
+Bankq spring water, Bankq, Spring water that makes you feel energised and full of hapiness. 500ml bottle, DRINKS, 740, 1.10, Bankq OOD, no,  ,
+Handmade bread, Dobrudja, Handmade bread with secret recipe., FOODS, 300, 1.30, Pekarna OOD, no,  ,
+Cheese, Mlechko, Fine bulgarian homemade cheese full of nutrition 500g, FOODS, 230, 8.40, Mlechko OOD, no,  ,
+Levis jeans, Levi's, Classic dark denim fabric with regular fit with size to fit all, CLOTHES, 200, 110.00, Levis Company, no,  ,
+Waterproof jacket , DIESEL, Waterproof jacket with two faces that will keep you warm and dry al the time, CLOTHES, 132, 89.00, Diesel Company, no,  ,
+T-shirt with stripes, Nike, Classic retro inspired nike t-shirt with a printed nike logo on the front and black stripes on the back, CLOTHES, 40, 43.00, Nike Sportswear, no,  ,
+Nike Air Max, Nike, Nike air max shoes made with enhanced support of the heel and fine breathable material. Size 43, SHOES, 40, 178.00, Nike Sportswear, yes, your name or custom text.
+Nike football boots, Nike, Nike boots made for firm terrain that give you max comfrot and agility. Size 41,5, SHOES, 20, 165.49, Nike Sportswear, yes, your name or custom text.
+Formal mans shoes, ShoesMax, Formal shoes that turn heads around and make you feel like a true gent. Size 43, SHOES, 90, 120.99, ShoesMax OOD, no,  ,
+Womens gloves, AccessoriesWorld, Warm and elegant gloves that completes every outfit. Universal size, ACCESSORIES, 110, 15.00, AccessoriesWorld, no,  ,
+Blue necklace, AccessoriesWorld, Fine jewelry that will make you feel beautiful., ACCESSORIES, 33, 29.99, AccessoriesWorld, no,  ,
+Winter hat for kids, AccessoriesWorld, Worrying that your child will catch a cold? Get this hat and never worry again., ACCESSORIES, 78, 10.99, AccessoriesWorld, yes, your child's name
+Alienware gaming pc, DELL, Dell Alienware Aurora R7 with Intel Core i7-8700 + 16GB 2666MHz DDR4 + 1TB HDD + 256GB M.2 SSD + NVIDIA GTX 1080Ti, ELECTRONICS, 22, 5000.00, DELL, yes, 16GB DDR4 memory
+HP 250 G5 notebook, HP, HP notebook with  Intel Core i5-6200U 2.30 GHz + 4GB + 1 TB + AMD Radeon R5 M430 2GB, ELECTRONICS, 56, 989.00, HP, yes, 4GB DDR4 memory
+Samsung smart curved tv, Samsung, Samsung UE49MU6272UXXH 49" MU6272 4K Curved Smart TV Ultra HD LED TV, ELECTRONICS, 300, 1299.99, no,  ,
+Logitech gaming mouse G903, Logitech, Logitech G903 LIGHTSPEED optical (12 040 dpi), ELECTRONICS, 64, 300.99, no,  ,
