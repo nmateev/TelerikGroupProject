@@ -100,6 +100,10 @@ public class Application {
                 int option = 0;
                 while (!correct) {
                     String stringOption = reader.readLine();
+                    if (stringOption.length() == 0) {
+                        onlineStore.getGraphicalPresenter().presentMessage(INVALID_SELECTION);
+                        continue;
+                    }
                     //checks if the input's length is less then 2 digits and ig it is in the range of 1 to 5 because the search options count is 5
                     if (Character.isDigit(stringOption.charAt(0)) && stringOption.length() < 2) {
                         option = Integer.parseInt(stringOption);
