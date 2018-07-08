@@ -31,7 +31,7 @@ abstract classes and interfaces to deliver the required user experience and inte
  Main features of our store:
 -	log in
 -	list all products
--	sort by price ascending  / descending  ,  by category  ,  by name 
+-	sort by price ascending  / descending
 -	search products  by name, brand, category, below given price, above given price or description
 -	customize products
 -	add products to your shopping  cart
