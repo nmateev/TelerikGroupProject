@@ -17,7 +17,7 @@ and the best practices for Object-oriented design to build our project. We've di
 
  - Product database
 
- - Bussiness logic
+ - Business logic
  
  - Presenter
 
@@ -25,7 +25,7 @@ and the best practices for Object-oriented design to build our project. We've di
 
 
 We've combined all this layers together using composition in conjunction with 
-abstract classes and interfaces to deliver the requiered user experience and interaction with the store.
+abstract classes and interfaces to deliver the required user experience and interaction with the store.
  
 If you want to see our project you can go at https://github.com/caddok/TelerikGroupProject
 There you will find the full source code and all the required assets to execute it.
